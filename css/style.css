@@ -506,6 +506,7 @@ a {
   margin-top: 3.5rem;
   align-items: flex-start;
   width: 100%;
+  justify-content: center;
 }
 .get__slider-item {
   display: flex;

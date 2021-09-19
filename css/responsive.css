@@ -1,0 +1,565 @@
+/* mobie */
+@media (max-width: 767px) {
+  :root {
+    /* width */
+    --main: 100%;
+    --container: calc(100% - 20px);
+
+    /* font family */
+    --font--poppins: "Poppins", sans-serif;
+
+    /* font size*/
+    --size--footer-14: 14px;
+    --size--p-16: 14px;
+    --size--p--header-18: 18px;
+    --size--title-item-20: 20px;
+    --size--mobile-logo-25: 25px;
+    --size--logo-footer-30: 30px;
+    --size--36: 28px;
+    --size--title-block-40: 28px;
+    --size--title-dowload-48: 24px;
+    --size--60: 30px;
+
+    /* bg color */
+    --primery--color: #2500f9;
+    --bg--color--pinkm: #ffecef;
+    --bg--color--bluem: #eaf9ff;
+    --bg--color--yellowm: #fff6d3;
+    --bg--color--greenm: #e4ffee;
+    --bg--color--purple: #f4f4ff;
+    --bg--color--redm: #fdeee4;
+    --bg--btn--hover: #eff3f8;
+    --bg--color--content: #f5f7fa;
+    --icon--color: #273043;
+    --white--color: #ffffff;
+    --black--color: #000000;
+    /* text color */
+
+    --color--text--logo: #fcae61;
+    --cred--color: #f55767;
+    --cblue--color: #2563ff;
+    --cgreen--color: #40975f;
+    --title--color: #242f51;
+    --parap--color: #616368;
+  }
+
+  .card__img {
+    width: 70px;
+    height: 70px;
+  }
+  .card__body {
+    margin-top: 0;
+    padding: 1rem;
+  }
+
+  .btn__item {
+    padding: 1.5rem 3rem;
+  }
+
+  .btn__item--second {
+    color: var(--white--color) !important;
+    background-color: var(--primery--color) !important;
+  }
+
+  /* Nav mobile */
+  .nav {
+    margin-top: 2rem;
+  }
+  .nav__menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    right: 0;
+    background-color: var(--white--color);
+    transition: ease 1s;
+    z-index: 1000;
+    transform: translateX(100%);
+  }
+  .is-open {
+    transform: translate(0);
+  }
+  .is-hidden {
+    opacity: 0;
+    transition: ease 1s;
+  }
+  .nav__mobile {
+    display: block;
+    position: fixed;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: var(--white--color);
+    z-index: 900;
+    color: var(--color--text--logo);
+    right: 1rem;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+  .nav__menu-close {
+    width: 100%;
+    display: flex;
+    font-size: var(--size--mobile-logo-25);
+    color: var(--color--text--logo);
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  .nav__menu-logo {
+    font-size: var(--size--mobile-logo-25);
+  }
+  .nav__menu-logo span {
+    color: var(--icon--color);
+  }
+  .nav__menu-item {
+    padding: 2rem 0;
+    margin: 0;
+  }
+  .nav__menu-btn {
+    margin: 0;
+    padding-top: 2rem;
+  }
+  /* header */
+  .header {
+    background-image: url(../img/smart__phone.png);
+    background-size: contain;
+    background-position-y: 35rem;
+  }
+  .header .container {
+    height: 95rem;
+  }
+  .header__content-top {
+    width: 100%;
+    font-size: var(--size--p-16);
+  }
+  .header__content-ticker {
+    padding: 0.5rem 1rem;
+  }
+
+  .header__content {
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: 0;
+    top: 0;
+    transform: translateY(0);
+  }
+  .header__content-btn {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  /* company */
+  .company {
+    margin-top: 5rem;
+  }
+  .company .container {
+    padding: 0 1rem;
+  }
+  /* Cần chỉnh cho mất thanh scroll */
+  .company__logo {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .company__logo-item {
+    padding: 1rem;
+  }
+  .company__logo-item img {
+    max-width: 9rem;
+  }
+
+  /* awesome */
+  .awesome {
+    margin-top: 5rem;
+    padding-top: 45rem;
+    background-position-x: left;
+    padding-bottom: 7rem;
+    background-size: 50%;
+  }
+  .awesome__content {
+    width: 100%;
+    left: 0;
+    margin: 0 1rem;
+  }
+  .awesome__content-body {
+    margin-bottom: 3rem;
+  }
+
+  .awesome__content-card {
+    margin: 0;
+    align-items: center;
+  }
+  .awesome__content-card .card__img {
+    margin-right: 0;
+  }
+
+  /* smart */
+  .smart__content {
+    flex-direction: column;
+  }
+  .smart__content-title {
+    padding: 0;
+    border-bottom: 1px solid var(--boder--color);
+  }
+  .smart__content-desc {
+    padding: 0;
+  }
+  .smart__cards {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .smart__cards-card {
+    padding: 0;
+  }
+
+  /* desigred */
+
+  .designed {
+    background-position-x: 0;
+  }
+  .designed .container {
+    height: 45rem;
+  }
+  .designed__content {
+    width: 100%;
+    padding: 0;
+    top: 30rem;
+    left: 0;
+    transform: translate(0);
+  }
+  .designed__content-btn {
+    text-align: center;
+  }
+
+  /* why */
+  .why {
+    margin-top: 20rem;
+  }
+  .why__content-title {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .why__content-desc {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .why__cards {
+    --column: 1;
+    --distance: 0;
+    padding: 0;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  .why__cards-card {
+    margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* ultimate */
+  .ultimate {
+    margin-top: 2rem;
+    background: 108.5rem 7.6rem / 46.1rem 73rem no-repeat
+        url(../img/bg__ultimate-2.png),
+      88.5rem 10rem / 45.8rem 64.7rem no-repeat url(../img/bg__ultimate-1.png);
+  }
+  .ultimate__content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .ultimare__cards {
+    width: 100%;
+    --column: 1;
+    --distance: 0;
+    margin-left: 0;
+  }
+  .ultimate__btn {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* get */
+  .get {
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .get__content {
+    width: 100%;
+    font-size: var(--size--p--header-18);
+  }
+  .get__content-title {
+    margin-bottom: 0;
+  }
+  .get__content-desc {
+    margin-bottom: 2rem;
+  }
+
+  .get__slider {
+    flex-direction: column;
+  }
+  .get__slider-item ~ .get__slider-item {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .get__slider-item {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .get__slider-header {
+    width: 100%;
+  }
+
+  /* meet */
+  .meet {
+    background-size: 100%;
+    background-position-y: 0;
+    margin-top: 3rem;
+    height: 80rem;
+  }
+  .meet__content {
+    width: 100%;
+    left: 0;
+    top: 25rem;
+  }
+  .meet__content-footer {
+    flex-direction: column;
+  }
+  .meet__content-btns {
+    align-self: flex-end;
+  }
+  .meet__content-btn {
+  }
+  .btn-circle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* asked */
+  .asked {
+    padding-bottom: 3rem;
+  }
+  .asked__header {
+    width: 100%;
+    text-align: left;
+  }
+  .asked__content {
+    padding: 0;
+  }
+  .asked__content-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: var(--size--p--header-18);
+  }
+  .asked__questions-item {
+    padding: 2rem 1rem;
+  }
+  .asked__questions-item .title-parap {
+    font-size: var(--size--p-16);
+    margin-right: 1rem;
+  }
+  /* download */
+  .download {
+    padding: 1rem 0;
+    background-image: none;
+  }
+  .download__content {
+    width: 100%;
+    padding: 0;
+  }
+  .download__content-title {
+    margin-bottom: 2rem;
+  }
+  .download__content-desc {
+    margin-bottom: 2rem;
+  }
+  .download__content-btn {
+    padding: 0;
+    text-align: center;
+  }
+  .download__content-btn img {
+    margin: 0;
+    width: 40%;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: 2rem;
+  }
+  .footer__logo {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .footer__nav {
+    display: none;
+  }
+  .footer__icon {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .footer__sub {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --main: 100%;
+    --container: calc(100% - 2rem);
+
+    /* font size */
+    --size--footer-14: 14px;
+    --size--p-16: 14px;
+    --size--p--header-18: 18px;
+    --size--title-item-20: 20px;
+    --size--mobile-logo-25: 25px;
+    --size--logo-footer-30: 30px;
+    --size--36: 28px;
+    --size--title-block-40: 28px;
+    --size--title-dowload-48: 24px;
+    --size--60: 30px;
+  }
+  .btn__item {
+    padding: 1.5rem 3rem;
+  }
+
+  .wrapper {
+    background: none;
+  }
+  .nav__menu-item {
+    margin-right: 2rem;
+  }
+
+  .header {
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+  .header .container {
+    height: 50rem;
+  }
+
+  .awesome {
+    margin-top: 10rem;
+    background-position-y: center;
+    background-position-x: left;
+    background-size: 50%;
+  }
+
+  .awesome__content {
+    width: 50%;
+    padding-right: 2rem;
+    background-position-x: left;
+    background-size: 50%;
+  }
+
+  .smart__content-title {
+    padding: 0;
+  }
+  .smart__content-desc {
+    padding: 2rem;
+  }
+  .smart__cards-card {
+    padding: 0 2rem;
+  }
+
+  .designed__content {
+    padding: 2rem;
+  }
+  .designed {
+    background-position-x: left;
+    background-size: 45%;
+    background-position-y: center;
+  }
+  .designed .container {
+    height: 50rem;
+  }
+  .company .container {
+    padding: 0;
+  }
+
+  .why {
+    margin-top: 5rem;
+  }
+  .why__cards {
+    --distance: 2rem;
+    padding: 0 2rem;
+  }
+
+  .ultimate {
+    background-image: url(../img/ultimate_feature_img.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x: right;
+    background-position-y: top;
+  }
+
+  .ultimare__cards {
+    width: 60%;
+    --distance: 2rem;
+    margin-left: 2rem;
+  }
+  .get__slider {
+    justify-content: center;
+  }
+
+  .download {
+    background-size: 50%;
+    background-position-y: center;
+  }
+}
+
+@media (width: 1024px) {
+  :root {
+    --main: 100%;
+    --container: calc(100% - 2rem);
+  }
+
+  .wrapper {
+    background: none;
+  }
+  .nav__menu-item {
+    margin-right: 2rem;
+  }
+
+  .header {
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+
+  .awesome {
+    background-position-x: left;
+    background-size: 50%;
+  }
+
+  .designed {
+    background-position-x: left;
+    background-size: 45%;
+    background-position-y: bottom;
+  }
+  .designed .container {
+    height: 50rem;
+  }
+
+  .ultimate {
+    background-image: url(../img/ultimate_feature_img.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: right;
+    background-position-y: center;
+  }
+
+  .ultimate__content {
+  }
+  .ultimare__cards {
+    width: 50%;
+    --distance: 3rem;
+  }
+  .get__slider {
+    justify-content: center;
+  }
+
+  .download {
+    background-size: 50%;
+    background-position-y: center;
+  }
+}

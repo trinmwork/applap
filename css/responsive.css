@@ -326,8 +326,7 @@
   .meet__content-btns {
     align-self: flex-end;
   }
-  .meet__content-btn {
-  }
+
   .btn-circle {
     width: 3rem;
     height: 3rem;
@@ -548,8 +547,6 @@
     background-position-y: center;
   }
 
-  .ultimate__content {
-  }
   .ultimare__cards {
     width: 50%;
     --distance: 3rem;

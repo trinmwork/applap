@@ -60,6 +60,12 @@ html {
   font-size: 62.5%;
   /* 1 rem bằng 10px */
 }
+h2,
+p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 body {
   font-family: var(--font--poppins);
   line-height: 1;
@@ -78,7 +84,6 @@ body {
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: var(--black--color);
@@ -119,7 +124,6 @@ a {
   border-radius: 50%;
   flex-shrink: 0;
 }
-
 .card__img--bgred {
   background-color: var(--bg--color--redm);
 }
@@ -170,13 +174,14 @@ a {
   line-height: 1.5;
 }
 
-/* btn */
+/* btn chung */
 .btn__item {
   padding: 2rem 4rem;
   font-size: var(--size--p-16);
   border-radius: 10rem;
   outline: hidden;
   border: none;
+  background-color: var(--white--color);
   font-weight: 600;
 }
 .btn__item--primery {
@@ -374,6 +379,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 15.5rem;
+  object-fit: cover;
 }
 .designed .container {
   height: 62rem;
@@ -397,6 +403,13 @@ a {
 /* Why */
 .why {
   margin-top: 14rem;
+}
+
+.btn__item--active {
+  color: var(--white--color);
+  background-color: var(--primery--color);
+
+  transition: color 1s;
 }
 .why .container {
   display: flex;
@@ -431,6 +444,13 @@ a {
   align-items: center;
   text-align: center;
   margin-bottom: 7rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.why__cards-card {
+  width: calc(calc(100% / var(--column)) - var(--distance) / 2);
+  align-items: flex-start;
+  text-align: start;
 }
 /* ultimate */
 .ultimate {
@@ -448,7 +468,6 @@ a {
 .ultimate__content-title {
   margin-bottom: 3rem;
 }
-
 .ultimare__cards {
   width: 64rem;
   display: flex;
@@ -458,12 +477,6 @@ a {
   flex-wrap: wrap;
   margin-left: 5rem;
 }
-
-.why__cards-card {
-  width: calc(calc(100% / var(--column)) - var(--distance) / 2);
-  align-items: flex-start;
-  text-align: start;
-}
 .ultimate__btn {
   margin-left: 5rem;
 }
@@ -471,6 +484,7 @@ a {
   padding-left: 6rem;
   padding-right: 6rem;
 }
+
 /* block GET */
 .get {
   margin-top: 17rem;
@@ -578,7 +592,6 @@ a {
   background-position-y: 11rem;
   padding-bottom: 2rem;
 }
-
 .meet__content {
   width: 50%;
   position: relative;
@@ -622,7 +635,6 @@ a {
 .meet__content-btn ~ .meet__content-btn {
   margin-left: 2rem;
 }
-
 .btn-circle {
   border-radius: 50%;
   height: 5rem;
@@ -643,7 +655,6 @@ a {
   padding-bottom: 11.5rem;
   border-bottom: 1px solid var(--boder--color);
 }
-
 .asked .container {
   display: flex;
   flex-direction: column;

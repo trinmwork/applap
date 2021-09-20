@@ -67,8 +67,8 @@
                                 managing your personal budgets.</p>
                         </div>
                         <div class="header__content-btn">
-                            <div class="btn"><button class="btn__item btn__item--second">Try for free</button></div>
-                            <a href="#"><h2 class="header__content-sub">Watch demo video</h2></a>
+                            <div class="btn"><button class="btn__item btn__item--primery">Try for free</button></div>
+                            <div class="btn"><button class="btn__item btn__item--second">Watch demo video</button></div>
                         </div>
                     </div>
                 </div>
@@ -478,9 +478,9 @@
                         </p>
                     </div>
                     <div class="get__content-btn">
-                        <div class="btn"><a href="#"><button class="btn__item btn__item--second">Monthly</button></a>
+                        <div class="btn btn__active-fist"><button class="btn__item btn__active-monthly btn__item--active">Monthly</button>
                         </div>
-                        <div class="btn"><a href="#"><button class="btn__item btn__item--second">Annually</button></a>
+                        <div class="btn btn__active-second"><button class="btn__item btn__active-annually ">Annually</button>
                         </div>
                     </div>
                 </div>
@@ -734,6 +734,7 @@
     </div> -->
 
     <script>
+        // cái này là menu mobile
         const openMenu = document.querySelector(".nav__mobile")
         const closeMenu = document.querySelector(".nav__menu-close")
         const navMenu = document.querySelector(".nav__menu")
@@ -752,6 +753,24 @@
             navLogo.classList.remove(isHidden)
             openMenu.classList.remove(isHidden)
         })
+
+
+        // Cái này là nút gạt block get
+        const Monthly = document.querySelector(".btn__active-fist")
+        const Annually = document.querySelector(".btn__active-second")
+        const isActive = "btn__item--active";
+        const btnMonthly = document.querySelector(".btn__active-monthly")
+        const btnAnnually = document.querySelector(".btn__active-annually")
+        Monthly.addEventListener('click', function() {
+            btnMonthly.classList.add(isActive)
+            btnAnnually.classList.remove(isActive)
+        })
+
+        Annually.addEventListener('click', function() {
+            btnMonthly.classList.remove(isActive)
+            btnAnnually.classList.add(isActive)
+        })
+
 
 
     </script>

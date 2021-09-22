@@ -46,6 +46,7 @@
   .card__img {
     width: 70px;
     height: 70px;
+    margin-left: 1rem;
   }
   .card__body {
     margin-top: 0;
@@ -119,23 +120,16 @@
     padding-top: 2rem;
   }
   /* header */
-  .header {
-    background: top no-repeat url(../img/smart__phone.png),
-      bottom no-repeat url(../img/bg__header.png);
-    background-size: contain;
-  }
+
   .header .container {
-    height: 90rem;
+    flex-direction: column;
   }
   .header__content {
     width: 100%;
-    padding-top: 58rem;
-    margin-left: 0;
-    top: 0;
-    transform: translateY(0);
+    margin: 0;
   }
   .header__content-top {
-    width: 100%;
+    width: 90%;
     font-size: var(--size--p-16);
   }
   .header__content-ticker {
@@ -172,18 +166,35 @@
   /* awesome */
   .awesome {
     margin-top: 5rem;
-    padding-top: 45rem;
     background-position-x: left;
     padding-bottom: 7rem;
     background-size: 100%;
+    max-width: 100%;
+    background: none;
   }
+  .awesome .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .awesome__img {
+    display: block;
+  }
+
+  .awesome__img-item {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .awesome__content {
     width: 100%;
     left: 0;
-    margin: 0 1rem;
   }
   .awesome__content-body {
     margin-bottom: 3rem;
+  }
+  .awesome__content-cards {
+    width: 100%;
   }
 
   .awesome__content-card {
@@ -200,6 +211,7 @@
   }
   .smart__content-title {
     padding: 0;
+    border-right: none;
     border-bottom: 1px solid var(--boder--color);
   }
   .smart__content-desc {
@@ -216,17 +228,25 @@
   /* desigred */
 
   .designed {
-    background-position-x: 0;
+    margin-top: 3rem;
   }
   .designed .container {
-    height: 45rem;
+    flex-direction: column;
   }
+  .designed__img {
+    display: block;
+    margin-left: 0;
+  }
+
+  .designed__img-item {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .designed__content {
     width: 100%;
     padding: 0;
-    top: 30rem;
-    left: 0;
-    transform: translate(0);
   }
   .designed__content-btn {
     text-align: center;
@@ -234,7 +254,7 @@
 
   /* why */
   .why {
-    margin-top: 20rem;
+    margin-top: 3rem;
   }
   .why__content-title {
     width: 100%;
@@ -280,6 +300,9 @@
     --distance: 0;
     margin-left: 0;
   }
+  .ultimate__bg {
+    display: none;
+  }
   .ultimate__btn {
     margin-left: 0;
     text-align: center;
@@ -289,6 +312,7 @@
   .get {
     margin-top: 5rem;
     width: 100%;
+    padding-bottom: 3rem;
   }
   .get__content {
     width: 100%;
@@ -318,10 +342,13 @@
 
   /* meet */
   .meet {
-    background-size: 100%;
-    background-position-y: 0;
-    margin-top: 3rem;
-    height: 80rem;
+    margin-top: 1rem;
+  }
+  .meet .container {
+    flex-direction: column;
+  }
+  .meet__bg {
+    margin-left: 0;
   }
   .meet__content {
     width: 100%;
@@ -342,6 +369,7 @@
 
   /* asked */
   .asked {
+    margin-top: 3rem;
     padding-bottom: 3rem;
   }
   .asked__header {
@@ -450,6 +478,9 @@
   .header .container {
     height: 50rem;
   }
+  .header__img-item {
+    width: 90%;
+  }
 
   /* company */
   .company {
@@ -491,16 +522,13 @@
   .designed {
     margin-top: 3rem;
   }
-  .designed .container {
-    height: 40rem;
-  }
+
   .designed__content {
     padding: 2rem;
   }
-  .designed {
-    background-position-x: left;
-    background-size: 45%;
-    background-position-y: center;
+
+  .designed__img {
+    margin-left: 0;
   }
 
   .company .container {
@@ -518,26 +546,30 @@
   }
 
   .ultimate {
-    background-image: url(../img/ultimate_feature_img.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: right;
-    background-position-y: top;
+    background: none;
     margin-top: 3rem;
   }
-  .ultimate__content {
-    padding-top: 15rem;
-    margin-bottom: 3rem;
+  .ultimate .container {
+    flex-direction: column-reverse;
   }
+  .ultimate__bg {
+    display: none;
+  }
+  .ultimate__content {
+    margin: 0 auto;
+    text-align: center;
+    width: 50rem;
+  }
+
   .ultimare__cards {
-    width: 65%;
-    --distance: 1rem;
-    margin-top: 10rem;
+    width: 100%;
+    --distance: 2rem;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
   }
   .ultimate__btn {
-    margin-left: 15rem;
+    margin-left: 0;
   }
 
   .why__cards-card {
@@ -580,6 +612,9 @@
     padding: 1rem 0;
     background-size: 50%;
     background-position-y: center;
+  }
+  .download__content-btn img {
+    width: 80%;
   }
   .footer {
     margin-top: 3rem;

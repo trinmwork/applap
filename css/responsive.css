@@ -595,6 +595,9 @@
   .meet__content-footer {
     margin-top: 3rem;
   }
+  .meet__bg {
+    margin-left: 0;
+  }
 
   .asked {
     margin-top: 3rem;
@@ -637,7 +640,9 @@
     --main: 100%;
     --container: calc(100% - 2rem);
   }
-
+  .nav {
+    margin-top: 3rem;
+  }
   .wrapper {
     background: none;
   }
@@ -653,9 +658,15 @@
   .awesome {
     background-position-x: left;
     background-size: 50%;
+    margin-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  .smart__cards {
+    margin-top: 5rem;
   }
 
   .designed {
+    margin-top: 5rem;
     background-position-x: left;
     background-size: 45%;
     background-position-y: bottom;
@@ -663,25 +674,83 @@
   .designed .container {
     height: 50rem;
   }
-
+  .why {
+    margin-top: 5rem;
+  }
   .ultimate {
-    background-image: url(../img/ultimate_feature_img.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: right;
-    background-position-y: center;
+    margin-top: 2rem;
+  }
+
+  .meet__bg {
+    margin-left: 0;
+  }
+
+  .ultimate__bg {
+    margin-right: 0;
+    margin-left: -15rem;
+  }
+  .ultimate__content {
+    margin-left: 2rem;
+  }
+  .ultimate__content-title .title--block {
+    width: 40rem;
+  }
+  .ultimate__content-desc {
+    width: 40rem;
+    margin-bottom: 5rem;
   }
 
   .ultimare__cards {
-    width: 50%;
-    --distance: 3rem;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .ultimare__cards .why__cards-card {
+    width: 40%;
+  }
+  .ultimate__content {
+    width: 100%;
+  }
+
+  .get {
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  .get__content-title {
+    margin-bottom: 0;
+  }
+  .get__content-desc {
+    margin-bottom: 2rem;
   }
   .get__slider {
     justify-content: center;
   }
+  .meet {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .asked {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+  }
 
   .download {
+    padding: 3rem 0;
     background-size: 50%;
     background-position-y: center;
+  }
+  .footer {
+    margin-top: 2rem;
+  }
+  .footer__logo {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .footer__icon {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .footer__sub {
+    margin-bottom: 5rem;
   }
 }

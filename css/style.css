@@ -607,6 +607,7 @@ a {
 .meet .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .meet__bg {
   margin-left: -21.5rem;

@@ -484,6 +484,9 @@ a {
 .ultimate__content-title {
   margin-bottom: 3rem;
 }
+.ultimate__content-desc {
+  margin-bottom: 6rem;
+}
 .ultimare__cards {
   width: 64rem;
   display: flex;
